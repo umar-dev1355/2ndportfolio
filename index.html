@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Sher — Full StackWeb Developer</title>
+<meta name="description" content="Portfolio of Ali Sher, web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='6' y='22' font-family='monospace' font-size='16' fill='%233fb950'%3E%3E_%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Top bar styled as editor tabs -->
+<header class="tabbar">
+  <div class="tabbar-inner">
+    <span class="brand"><img class="brand-avatar" src="avatar.jpg" alt=""> ali_sher</span>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="tabs" id="tabs">
+      <a class="tab" href="#about" data-tab="about">about.md</a>
+      <a class="tab" href="#projects" data-tab="projects">projects/</a>
+      <a class="tab" href="#skills" data-tab="skills">skills.json</a>
+      <a class="tab" href="#contact" data-tab="contact">contact.sh</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="window">
+      <div class="window-bar">
+        <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
+        <span class="window-title">bash</span>
+      </div>
+      <div class="window-body">
+        <div class="hero-text">
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <h1 class="hero-name">Ali Sher</h1>
+          <p class="hero-role"><span id="typedRole"></span><span class="cursor">_</span></p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">./view-projects</a>
+            <a href="#contact" class="btn btn-outline">&gt; contact.sh</a>
+          </div>
+          <div class="hero-actions" style="margin-top: 12px;">
+            <a href="https://wa.me/923018380666" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.7-6.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="avatar avatar-large" id="avatar">
+          <img src="avatar.jpg" alt="Ali Sher">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section reveal" id="about">
+    <p class="file-label">// about.md</p>
+    <h2># About</h2>
+    <div class="prose">
+      <!-- TODO: replace with your own bio -->
+      <p>I'm a Full Stack Web Developer working across the stack — Django and Python on the backend, HTML/CSS/JavaScript and
+      Bootstrap on the front end. I like building things with real functionality behind them: user accounts,
+      searchable directories, shopping carts, payments — not just static pages.</p>
+      <p>Outside of client work, I spend time building and backtesting side projects — currently that's
+      algorithmic trading systems, but on this site the focus stays on the web development work.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section reveal" id="projects">
+    <p class="file-label">// projects/</p>
+    <h2># Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <p class="git-log"><span class="prompt">$</span> git log --oneline -1 novora</p>
+        <h3>NOVORA</h3>
+        <p class="project-desc">An e-commerce storefront for Eastern and Western fashion, extended with an AI styling engine — customers enter body measurements and get a calculated body-shape analysis, an LLM-generated personal styling note, and live product recommendations pulled from the store's own inventory. Also includes an AI shopping assistant chatbot for FAQs and fashion advice.</p>
+        <div class="tags">
+          <span class="tag tag-py">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">LLM API</span>
+          <span class="tag">SQLite</span>
+        </div>
+        <div class="project-links">
+          <a href="https://novora-app.onrender.com/" class="proj-link"><!-- TODO: live demo link once deployed -->Live demo →</a>
+          <a href="https://github.com/ali-sher-makki/Novora" class="proj-link" target="_blank" rel="noopener"><!-- TODO: point to this project's specific repo once pushed -->Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <p class="git-log"><span class="prompt">$</span> git log --oneline -1 leather-dynamic</p>
+        <h3>Leather Dynamic</h3>
+        <p class="project-desc">A live B2B e-commerce platform built for a real leather goods manufacturer — product catalog, cart, wishlist, Cash-on-Delivery checkout, verified-purchase reviews, a dark/light theme toggle, and smooth GSAP-powered animations. Deployed on a custom domain.</p>
+        <div class="tags">
+          <span class="tag tag-py">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">DRF</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Railway</span>
+        </div>
+        <div class="project-links">
+          <a href="https://www.leatherdynamic.com" class="proj-link" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/ali-sher-makki/leather-dynamics" class="proj-link" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <p class="git-log"><span class="prompt">$</span> git log --oneline -1 knowledge-link-institute</p>
+        <h3>Knowledge Link Institute</h3>
+        <p class="project-desc">A tutoring platform connecting students and teachers — role-based accounts, searchable teacher/student directories with subject and qualification filters, profile pages, and Google OAuth login.</p>
+        <div class="tags">
+          <span class="tag tag-py">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Stripe</span>
+        </div>
+        <div class="project-links">
+          <a href="https://alishermakki.pythonanywhere.com/" class="proj-link" target="_blank" rel="noopener">Live demo →</a>
+          <a href="https://github.com/ali-sher-makki/knowledge-link-institute" class="proj-link" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <p class="git-log"><span class="prompt">$</span> git log --oneline -1 future-factory</p>
+        <h3>Future Factory</h3>
+        <p class="project-desc">A marketing and lead-generation site for a digital agency — services, about, and leadership pages, a lead capture form, and an admin dashboard with push notifications for new leads.</p>
+        <div class="tags">
+          <span class="tag tag-py">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag tag-js">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://futurefactory-app.onrender.com/" class="proj-link"><!-- TODO: live demo link once deployed -->Live demo →</a>
+          <a href="https://github.com/ali-sher-makki/futurefactory" class="proj-link" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+
+      <!-- TODO: add more project cards here as you build/upload them -->
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section reveal" id="skills">
+    <p class="file-label">// skills.json</p>
+    <h2># Skills</h2>
+    <pre class="code-block"><code><span class="punct">{</span>
+  <span class="key">"backend"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Python"</span><span class="punct">,</span> <span class="str">"Django"</span><span class="punct">]</span><span class="punct">,</span>
+  <span class="key">"frontend"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"HTML"</span><span class="punct">,</span> <span class="str">"CSS"</span><span class="punct">,</span> <span class="str">"JavaScript"</span><span class="punct">,</span> <span class="str">"Bootstrap"</span><span class="punct">]</span><span class="punct">,</span>
+  <span class="key">"database"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"PostgreSQL"</span><span class="punct">,</span> <span class="str">"SQLite"</span><span class="punct">]</span><span class="punct">,</span>
+  <span class="key">"integrations"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Stripe"</span><span class="punct">,</span> <span class="str">"Google OAuth"</span><span class="punct">]</span><span class="punct">,</span>
+  <span class="key">"tools"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Git"</span><span class="punct">,</span> <span class="str">"GitHub"</span><span class="punct">,</span> <span class="str">"VS Code"</span><span class="punct">,</span> <span class="str">"Antigravity"</span><span class="punct">,</span> <span class="str">"PyCharm"</span><span class="punct">]</span>
+<span class="punct">}</span></code></pre>
+    <!-- TODO: adjust this list as your real stack grows -->
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section reveal" id="contact">
+    <p class="file-label">// contact.sh</p>
+    <h2># Get in touch</h2>
+    <pre class="code-block contact-block"><code><span class="comment">#!/bin/bash</span>
+<span class="key">echo</span> <span class="str">"Let's build something."</span>
+
+<span class="key">email   </span><span class="punct">=</span> <a class="link-inline" id="emailLink" href="mailto:shery78651214@gmail.com">shery78651214@gmail.com</a> <button class="copy-btn" id="copyEmail" type="button">copy</button>
+phone   <span class="punct">=</span> 0301-8380666
+github  <span class="punct">=</span> <a class="link-inline" href="https://github.com/ali-sher-makki" target="_blank" rel="noopener">github.com/ali-sher-makki</a>
+linkedin<span class="punct">=</span> <a class="link-inline" href="https://www.linkedin.com/in/ali-sher-0a2a78266" target="_blank" rel="noopener">linkedin.com/in/ali-sher</a>
+upwork  <span class="punct">=</span> <a class="link-inline" href="https://www.upwork.com/freelancers/~017c5d404ff0c6ab67" target="_blank" rel="noopener">upwork.com/freelancers/Ali Sher Makki</a></code></pre>
+    <div class="whatsapp-cta">
+      <a href="https://wa.me/923018380666" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.7-6.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+  <p class="footer-note">&copy; <span id="year"></span> Ali Sher</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
