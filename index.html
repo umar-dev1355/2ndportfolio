@@ -1,148 +1,377 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Umar Akram — IOS and Flutter Developer</title>
-<meta name="description" content="Portfolio of Umar Akram, IOS and Flutter developer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='6' y='22' font-family='monospace' font-size='16' fill='%233fb950'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Umar Akram — iOS & Flutter Developer</title>
+  <meta name="description" content="Umar Akram — iOS and Flutter developer specializing in Swift, SwiftUI, Flutter, Dart, and mobile app development.">
+
+  <meta name="theme-color" content="#0d1117">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='4' y='23' font-family='monospace' font-size='18' fill='%233fb950'%3EUA%3C/text%3E%3C/svg%3E">
 </head>
+
 <body>
 
-<!-- Top bar styled as editor tabs -->
-<header class="tabbar">
-  <div class="tabbar-inner">
-    <span class="brand"><img class="brand-avatar" src="avatar.jpg" alt=""> ali_sher</span>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="tabs" id="tabs">
-      <a class="tab" href="#about" data-tab="about">about.md</a>
-      <a class="tab" href="#projects" data-tab="projects">projects/</a>
-      <a class="tab" href="#skills" data-tab="skills">skills.json</a>
-      <a class="tab" href="#contact" data-tab="contact">contact.sh</a>
-    </nav>
-  </div>
-</header>
+  <!-- Navigation -->
+  <header class="tabbar">
+    <div class="tabbar-inner">
+      <a class="brand" href="#hero" style="text-decoration:none;">
+        <img class="brand-avatar" src="avatar.jpg" alt="">
+        umar_akram
+      </a>
 
-<main>
+      <button class="nav-toggle" id="navToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="tabs">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="window">
-      <div class="window-bar">
-        <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
-        <span class="window-title">bash</span>
-      </div>
-      <div class="window-body">
-        <div class="hero-text">
-          <p class="line"><span class="prompt">$</span> whoami</p>
-          <h1 class="hero-name">Umar Akram</h1>
-          <p class="hero-role"><span id="typedRole"></span><span class="cursor">_</span></p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-solid">./view-projects</a>
-            <a href="#contact" class="btn btn-outline">&gt; contact.sh</a>
+      <nav class="tabs" id="tabs">
+        <a class="tab" href="#about" data-tab="about">about.md</a>
+        <a class="tab" href="#projects" data-tab="projects">projects/</a>
+        <a class="tab" href="#skills" data-tab="skills">skills.json</a>
+        <a class="tab" href="#contact" data-tab="contact">contact.sh</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="window">
+        <div class="window-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-amber"></span>
+          <span class="dot dot-green"></span>
+          <span class="window-title">bash</span>
+        </div>
+
+        <div class="window-body">
+          <div class="hero-text">
+            <p class="line"><span class="prompt">$</span> whoami</p>
+
+            <h1 class="hero-name">Umar Akram</h1>
+
+            <p class="hero-role">
+              <span id="typedRole">iOS & Flutter Developer</span>
+              <span class="cursor">_</span>
+            </p>
+
+            <p>
+              Building intuitive, reliable mobile applications
+              for iOS and cross-platform experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-solid">
+                ./view-projects
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                &gt; contact.sh
+              </a>
+            </div>
+
+            <div class="hero-actions" style="margin-top:12px;">
+              <a href="https://wa.me/923082188308"
+                 class="btn btn-whatsapp"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.7-6.2A8.5 8.5 0 1 1 21 11.5Z"/>
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
           </div>
-          <div class="hero-actions" style="margin-top: 12px;">
-            <a href="https://wa.me/923082188308" class="btn btn-whatsapp" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.7-6.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-              Chat on WhatsApp
+
+          <div class="avatar avatar-large" id="avatar">
+            <img src="avatar.jpg" alt="Umar Akram">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section reveal" id="about">
+      <p class="file-label">// about.md</p>
+      <h2># About Me</h2>
+
+      <div class="prose">
+        <p>
+          I'm Umar Akram, a mobile application developer focused
+          on iOS and cross-platform development using Swift,
+          SwiftUI, Flutter, and Dart.
+        </p>
+
+        <p>
+          I enjoy creating clean interfaces, smooth user
+          experiences, and maintainable mobile applications.
+          My development interests include mobile architecture,
+          API integration, application performance, and
+          responsive UI design.
+        </p>
+
+        <p>
+          My portfolio features Tabbeb, Wareed, and Travel House.
+          I'm passionate about building useful mobile products
+          and continuously improving my development skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section reveal" id="projects">
+      <p class="file-label">// projects/</p>
+      <h2># Featured Projects</h2>
+
+      <div class="project-grid">
+
+        <!-- Tabbeb -->
+        <article class="project-card">
+          <p class="git-log">
+            <span class="prompt">$</span> project --name tabbeb
+          </p>
+
+          <h3>Tabbeb</h3>
+
+          <p class="project-desc">
+            A healthcare mobile application project focused on
+            convenient access to healthcare-related services.
+            Designed around an accessible interface and a
+            smooth mobile user experience.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Mobile Development</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">API Integration</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#contact" class="proj-link">
+              Project Inquiry →
             </a>
           </div>
-        </div>
-        <div class="avatar avatar-large" id="avatar">
-          <img src="avatar.jpg" alt="umar akram">
-        </div>
+        </article>
+
+        <!-- Wareed -->
+        <article class="project-card">
+          <p class="git-log">
+            <span class="prompt">$</span> project --name wareed
+          </p>
+
+          <h3>Wareed</h3>
+
+          <p class="project-desc">
+            A mobile application project focused on intuitive
+            navigation, clear interfaces, and a reliable user
+            experience. Developed with an emphasis on
+            maintainable code and mobile usability.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Mobile Development</span>
+            <span class="tag">Application UI</span>
+            <span class="tag">Mobile UX</span>
+          </div>
+
+          <div class="project-links">
+            <a href="#contact" class="proj-link">
+              Project Inquiry →
+            </a>
+          </div>
+        </article>
+
+        <!-- Travel House -->
+        <article class="project-card">
+          <p class="git-log">
+            <span class="prompt">$</span> project --name travel-house
+          </p>
+
+          <h3>Travel House</h3>
+
+          <p class="project-desc">
+            A travel-focused mobile application designed to
+            help users access travel services through a
+            convenient mobile experience, simple navigation,
+            and a user-friendly interface.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Mobile Development</span>
+            <span class="tag">Travel App</span>
+            <span class="tag">UI/UX</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.travelhouse.uk.app"
+               class="proj-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              Google Play →
+            </a>
+          </div>
+        </article>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section reveal" id="about">
-    <p class="file-label">// about.md</p>
-    <h2># About</h2>
-    <div class="prose">
-      <!-- TODO: replace with your own bio -->
-      <p>I’m a mobile developer who builds apps for iOS and cross-platform using Swift, SwiftUI, and Flutter. I care about clean architecture, smooth performance, and interfaces that feel natural to use. Whether it’s a native iPhone app that takes full advantage of Apple’s platform or a Flutter app that ships to iOS and Android from one codebase, I focus on delivering reliable products from idea to App Store. I’m always learning, always shipping, and open to new projects.
-</p>
-    </div>
-  </section>
+    <!-- Skills -->
+    <section class="section reveal" id="skills">
+      <p class="file-label">// skills.json</p>
+      <h2># Technical Skills</h2>
 
-  <!-- PROJECTS -->
-  <section class="section reveal" id="projects">
-    <p class="file-label">// projects/</p>
-    <h2># Projects</h2>
-    <div class="project-grid">
+      <pre class="code-block"><code>{
+  "mobile_development": [
+    "Native iOS Development",
+    "Flutter Development",
+    "Cross-Platform Apps"
+  ],
+  "ios": [
+    "Swift",
+    "SwiftUI",
+    "UIKit",
+    "Xcode"
+  ],
+  "flutter": [
+    "Flutter",
+    "Dart",
+    "Flutter Widgets",
+    "Responsive UI"
+  ],
+  "architecture": [
+    "MVVM",
+    "MVC",
+    "Clean Architecture"
+  ],
+  "networking_and_data": [
+    "REST APIs",
+    "JSON",
+    "Firebase",
+    "Local Data Storage"
+  ],
+  "developer_tools": [
+    "Git",
+    "GitHub",
+    "Postman",
+    "VS Code",
+    "App Store Connect"
+  ]
+}</code></pre>
 
-      <article class="project-card">
-        <p class="git-log"><span class="prompt">$</span> git log --oneline -1 novora</p>
-        <h3>TEST PROJECT</h3>
-        <p class="project-desc">An e-commerce storefront for Eastern and Western fashion, extended with an AI styling engine — customers enter body measurements and get a calculated body-shape analysis, an LLM-generated personal styling note, and live product recommendations pulled from the store's own inventory. Also includes an AI shopping assistant chatbot for FAQs and fashion advice.</p>
-        <div class="tags">
-          <span class="tag tag-py">Python</span>
-          <span class="tag">Django</span>
-          <span class="tag">LLM API</span>
-          <span class="tag">SQLite</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="proj-link"><!-- TODO: live demo link once deployed -->Live demo →</a>
-          <a href="#" class="proj-link" target="_blank" rel="noopener"><!-- TODO: point to this project's specific repo once pushed -->Source →</a>
-        </div>
-      </article>
+      <div class="prose">
+        <p>
+          Focused on mobile application development, API
+          integration, user interface implementation,
+          debugging, and writing maintainable code.
+        </p>
+      </div>
+    </section>
 
-     
+    <!-- Contact -->
+    <section class="section reveal" id="contact">
+      <p class="file-label">// contact.sh</p>
+      <h2># Get in Touch</h2>
 
+      <pre class="code-block contact-block"><code><span class="comment">#!/bin/bash</span>
+<span class="key">echo</span> <span class="str">"Let's build something great."</span>
 
-      <!-- TODO: add more project cards here as you build/upload them -->
+email    = <a class="link-inline"
+  href="mailto:umar.akram.dev@gmail.com">umar.akram.dev@gmail.com</a>
 
-    </div>
-  </section>
+phone    = 03082188308
 
-  <!-- SKILLS -->
-  <section class="section reveal" id="skills">
-    <p class="file-label">// skills.json</p>
-    <h2># Skills</h2>
-    <pre class="code-block"><code><span class="punct">{</span>
-  <span class="key">"backend"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Python"</span><span class="punct">,</span> <span class="str">"Django"</span><span class="punct">]</span><span class="punct">,</span>
-  <span class="key">"frontend"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"HTML"</span><span class="punct">,</span> <span class="str">"CSS"</span><span class="punct">,</span> <span class="str">"JavaScript"</span><span class="punct">,</span> <span class="str">"Bootstrap"</span><span class="punct">]</span><span class="punct">,</span>
-  <span class="key">"database"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"PostgreSQL"</span><span class="punct">,</span> <span class="str">"SQLite"</span><span class="punct">]</span><span class="punct">,</span>
-  <span class="key">"integrations"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Stripe"</span><span class="punct">,</span> <span class="str">"Google OAuth"</span><span class="punct">]</span><span class="punct">,</span>
-  <span class="key">"tools"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Git"</span><span class="punct">,</span> <span class="str">"GitHub"</span><span class="punct">,</span> <span class="str">"VS Code"</span><span class="punct">,</span> <span class="str">"Antigravity"</span><span class="punct">,</span> <span class="str">"PyCharm"</span><span class="punct">]</span>
-<span class="punct">}</span></code></pre>
-    <!-- TODO: adjust this list as your real stack grows -->
-  </section>
+whatsapp = <a class="link-inline"
+  href="https://wa.me/923082188308"
+  target="_blank"
+  rel="noopener noreferrer">Chat on WhatsApp</a>
 
-  <!-- CONTACT -->
-  <section class="section reveal" id="contact">
-    <p class="file-label">// contact.sh</p>
-    <h2># Get in touch</h2>
-    <pre class="code-block contact-block"><code><span class="comment">#!/bin/bash</span>
-<span class="key">echo</span> <span class="str">"Let's build something."</span>
+github   = <a class="link-inline"
+  href="https://github.com/umarakramtech-pixel"
+  target="_blank"
+  rel="noopener noreferrer">GitHub Profile</a>
 
-<span class="key">email   </span><span class="punct">=</span> <a class="link-inline" id="emailLink" href="mailto:umar.akram.dev@gmail.com">shery78651214@gmail.com</a> <button class="copy-btn" id="copyEmail" type="button">copy</button>
-phone   <span class="punct">=</span> 03082188308
-github  <span class="punct">=</span> <a class="link-inline" href="#" target="_blank" rel="noopener">#</a>
-linkedin<span class="punct"></span> <a class="link-inline" href="#" target="_blank" rel="noopener">#</a>
-Fiver  <span class="punct">=</span> <a class="link-inline" href="#" target="_blank" rel="noopener">#</a></code></pre>
-    <div class="whatsapp-cta">
-      <a href="https://wa.me/923082188308" class="btn btn-whatsapp" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L3 21l1.7-6.2A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-        Chat on WhatsApp
-      </a>
-    </div>
-  </section>
+linkedin = <a class="link-inline"
+  href="https://www.linkedin.com/in/muhammad-umer-akram-9604a0321/"
+  target="_blank"
+  rel="noopener noreferrer">LinkedIn Profile</a></code></pre>
 
-</main>
+      <div class="whatsapp-cta">
+        <a href="https://wa.me/923082188308"
+           class="btn btn-whatsapp"
+           target="_blank"
+           rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
 
-<footer class="footer">
-  <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-  <p class="footer-note">&copy; <span id="year"></span> Umar Akram</p>
-</footer>
+        <a href="mailto:umar.akram.dev@gmail.com"
+           class="btn btn-solid">
+          Send an Email
+        </a>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      <span class="prompt">$</span>
+      <span class="cursor">_</span>
+    </p>
+
+    <p class="footer-note">
+      &copy; <span id="year"></span> Umar Akram
+    </p>
+  </footer>
+
+  <script>
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Mobile navigation
+    const navToggle = document.getElementById("navToggle");
+    const tabs = document.getElementById("tabs");
+
+    if (navToggle && tabs) {
+      navToggle.addEventListener("click", function () {
+        const expanded =
+          navToggle.getAttribute("aria-expanded") === "true";
+
+        navToggle.setAttribute(
+          "aria-expanded",
+          String(!expanded)
+        );
+
+        tabs.classList.toggle("active", !expanded);
+      });
+
+      tabs.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          tabs.classList.remove("active");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
